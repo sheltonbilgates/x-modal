@@ -18,6 +18,8 @@ const Modal = () => {
     const phoneNumber = event.target.phone.value;
     if (!isValidPhoneNumber(phoneNumber)) {
       alert('Please enter a valid 10-digit phone number.');
+      const newK = formData
+      console.log(newK);
       return;
     }
     const dob = new Date(event.target.dob.value);
